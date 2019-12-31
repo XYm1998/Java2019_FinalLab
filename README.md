@@ -11,9 +11,9 @@
 * 4、Camp类的对象用于存储单个阵营的所有对象。在Camp类中使用泛型，以配合不同的leader成员。
 ```Java
 public class Camp<T extends Unit> {
-	private ArrayList<Unit> soldiers;
-	private T leader;
-	...
+private ArrayList<Unit> soldiers;
+private T leader;
+...
 }
 ```
 * 5、阵型变换统一交给Formation类处理，相关的成员函数均为public static void。<br>
@@ -43,28 +43,28 @@ public class Camp<T extends Unit> {
 * 多线程：每个Unit为一个线程，实现Runnable接口，每个阵营通过一个线程池进行管理.对于Unit的移动、攻击等共享数据的方法，使用synchronized加锁
 ```Java
 GoodCampExecutor= Executors.newCachedThreadPool();
-    BadCampExecutor= Executors.newCachedThreadPool();
+BadCampExecutor= Executors.newCachedThreadPool();
 	
 public synchronized void beAttacked() {...}
 ```
 * 异常处理：使用异常处理机制，保护代码的执行，且可捕获异常、定位错误的发生处
 ```Java
 try {
-        Image image = new Image(s);
-        getView().setImage(image);
-    }catch (Exception e){
-        System.out.println(this+"图片加载失败");
-    }
+    Image image = new Image(s);
+    getView().setImage(image);
+}catch (Exception e){
+    System.out.println(this+"图片加载失败");
+}
 ```
 * 集合类型：多处使用ArrayList、HashMap以便于编程
 ```Java
 public HashMap<String, ArrayList<String>> history = new HashMap<>();//全部Unit的历史记录
-	protected ArrayList<String> history = new ArrayList<>();//单个Unit的历史记录
+protected ArrayList<String> history = new ArrayList<>();//单个Unit的历史记录
 ```
 * 泛型：此项已在上文说明<br>
 * 输入输出：使用装饰器模式
 ```Java
-	BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "gbk"));//由于存档带有中文，故使用gbk编码
+BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "gbk"));//由于存档带有中文，故使用gbk编码
 ```
 * 注解<br>
 ** @FXML：标识与fxml控件相关联的方法<br>
