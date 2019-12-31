@@ -42,14 +42,14 @@ public class Camp<T extends Unit> {
 * 多态：Unit的子类重写了父类的方法，提高可扩充性和可维护性。<br>
 * 多线程：每个Unit为一个线程，实现Runnable接口，每个阵营通过一个线程池进行管理.对于Unit的移动、攻击等共享数据的方法，使用synchronized加锁
 ```Java
-	GoodCampExecutor= Executors.newCachedThreadPool();
+GoodCampExecutor= Executors.newCachedThreadPool();
     BadCampExecutor= Executors.newCachedThreadPool();
 	
-	public synchronized void beAttacked() {...}
+public synchronized void beAttacked() {...}
 ```
 * 异常处理：使用异常处理机制，保护代码的执行，且可捕获异常、定位错误的发生处
 ```Java
-	try {
+try {
         Image image = new Image(s);
         getView().setImage(image);
     }catch (Exception e){
@@ -58,7 +58,7 @@ public class Camp<T extends Unit> {
 ```
 * 集合类型：多处使用ArrayList、HashMap以便于编程
 ```Java
-	public HashMap<String, ArrayList<String>> history = new HashMap<>();//全部Unit的历史记录
+public HashMap<String, ArrayList<String>> history = new HashMap<>();//全部Unit的历史记录
 	protected ArrayList<String> history = new ArrayList<>();//单个Unit的历史记录
 ```
 * 泛型：此项已在上文说明<br>
@@ -66,7 +66,7 @@ public class Camp<T extends Unit> {
 ```Java
 	BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "gbk"));//由于存档带有中文，故使用gbk编码
 ```
-* 注解
+* 注解<br>
 ** @FXML：标识与fxml控件相关联的方法<br>
 ** @Override：告知编译器，需要覆写父类的该方法<br>
 ** @Test：标识单元测试方法
