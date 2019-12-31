@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njuxym.sample.Controller">
+    <children>
+        <ImageView fitHeight="512" fitWidth="1024.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <image>
+                <Image url="@/img/bg.png" />
+            </image>
+        </ImageView>
+        <Pane fx:id="pane" prefHeight="512.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+        <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="文件">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#LoadTriggered" text="打开" />
+                        <MenuItem mnemonicParsing="false" onAction="#SaveTriggered" text="保存" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="控制">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#StartTriggered" text="开始" />
+                        <MenuItem mnemonicParsing="false" onAction="#ResetTriggered" text="重置" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="妖怪侧阵型">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#CSTriggered" text="长蛇" />
+                        <MenuItem mnemonicParsing="false" onAction="#YXTriggered" text="雁行" />
+                        <MenuItem mnemonicParsing="false" onAction="#HETriggered" text="横轭" />
+                        <MenuItem mnemonicParsing="false" onAction="#FSTriggered" text="锋矢" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#HelpTriggered" text="操作说明" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>
