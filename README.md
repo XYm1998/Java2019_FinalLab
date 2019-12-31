@@ -20,7 +20,7 @@ public class Camp<T extends Unit> {
 * 6、Controller类实现用户交互、动画等方面的功能
 
 ## Class Diagram
-![class_diagram](https://github.com/XYm1998/java-2019-homeworks/blob/master/4-Types/徐翊萌-161220150/img/Class_Diagram.png)
+![class_diagram](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/Class_Diagram.png)
 
 ## 战斗过程介绍
 
@@ -72,4 +72,5 @@ public class Camp<T extends Unit> {
 ** @Test：标识单元测试方法
 
 ## 结果展示
-![res1](https://github.com/XYm1998/java-2019-homeworks/blob/master/3-OOPAdvanced/徐翊萌-161220150/img/res1.png)
+![res1](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/init.png)
+![res2](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/res_win.png)
