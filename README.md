@@ -1,7 +1,7 @@
 # “葫芦娃大战妖精”代码说明
 
 ## 运行方法
-* 1、主目录下已有jar包。或使用mvn clean test packge在target目录生成jar包
+* 1、使用mvn clean test packge,在target目录生成jar包
 * 2、replay文件在replay目录
 
 ## 设计思路
@@ -20,7 +20,7 @@ public class Camp<T extends Unit> {
 * 6、Controller类实现用户交互、动画等方面的功能
 
 ## Class Diagram
-![class_diagram](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/Class_Diagram.png)
+![class_diagram](https://github.com/XYm1998/Java2019_FinalLab/blob/master/readme_picture/Class_Diagram.png)
 
 ## 战斗过程介绍
 
@@ -72,5 +72,5 @@ BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new Fi
 	@Test：标识单元测试方法
 
 ## 结果展示
-![res1](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/init.png)<br>
-![res2](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/res_win.png)
+![res1](https://github.com/XYm1998/Java2019_FinalLab/blob/master/readme_picture/init.png)<br>
+![res2](https://github.com/XYm1998/Java2019_FinalLab/blob/master/readme_picture/res_win.png)
