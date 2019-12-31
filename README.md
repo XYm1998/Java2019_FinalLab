@@ -11,8 +11,8 @@
 * 4、Camp类的对象用于存储单个阵营的所有对象。在Camp类中使用泛型，以配合不同的leader成员。
 ```Java
 public class Camp<T extends Unit> {
-private ArrayList<Unit> soldiers;
-private T leader;
+	private ArrayList<Unit> soldiers;
+	private T leader;
 ...
 }
 ```
@@ -20,7 +20,7 @@ private T leader;
 * 6、Controller类实现用户交互、动画等方面的功能
 
 ## Class Diagram
-![class_diagram](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/Class_Diagram.png)
+![class_diagram](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/Class_Diagram.png)
 
 ## 战斗过程介绍
 
@@ -72,5 +72,5 @@ BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new Fi
 ** @Test：标识单元测试方法
 
 ## 结果展示
-![res1](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/init.png)
-![res2](https://github.com/XYm1998/Java2019_FinalLab/tree/master/readme_picture/res_win.png)
+![res1](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/init.png)
+![res2](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/res_win.png)
