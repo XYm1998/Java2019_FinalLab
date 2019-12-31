@@ -67,10 +67,10 @@ protected ArrayList<String> history = new ArrayList<>();//单个Unit的历史记
 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "gbk"));//由于存档带有中文，故使用gbk编码
 ```
 * 注解<br>
-** @FXML：标识与fxml控件相关联的方法<br>
-** @Override：告知编译器，需要覆写父类的该方法<br>
-** @Test：标识单元测试方法
+	@FXML：标识与fxml控件相关联的方法<br>
+	@Override：告知编译器，需要覆写父类的该方法<br>
+	@Test：标识单元测试方法
 
 ## 结果展示
-![res1](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/init.png)
+![res1](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/init.png)<br>
 ![res2](https://github.com/XYm1998/Java2019_FinalLab/readme_picture/res_win.png)
